@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Internship Feedback </h1>
+        
+        <form onsubmit="sendEmail(), reset(), return false;">
+            <h4>Please entre your name</h4>
+            <input type="text" name="Name" id="Name"> 
+            
+            <h4>Please enter your e-mail</h4>
+            <input id="email" type="email" name="user_email" required >
+            
+            <h4>Age (optional)</h4>
+            <input type="number" id="age" >
+            <h4>Which option best describes your current role ?</h4>
+            <select id="role">
+                <option>Student</option>
+                <option>Intern</option>
+                <option>Junior/Associate </option>
+                <option>Senior/Manager </option>
+                <option>Entrepreneur </option>
+                <option>Freelancer </option>
+                <option>Other </option>
+            </select>
+            <br>
+              <label for="otherRole">Please specify:</label>
+              <br>
+              <input type="text" id="otherRole" name="otherRole">
+            
+        
+    
+              <br>
+                <h4>Would you recommend Code Alpha to your friends ?</h4>
+                <label >
+
+                  <input type="radio" value="sure" name="Do_you_recommend" id="Do_you_recommend">Sure!
+               
+              
+                  <input type="radio" value="maybe" name="Do_you_recommend" id="Do_you_recommend">Maybe
+                
+
+                  <input type="radio" value="not_sure" name="Do_you_recommend" id="Do_you_recommend">Not sure
+                </label>
+
+                <h4>What would you like to see improved ?</h4>
+                <input type="checkbox" name="improved " value="app_dev" id="improve">App development intership</checkbox>
+                <br>
+                <input type="checkbox" name="improved " value="cloud_computing" id="improve">Cloud computing intership</checkbox>
+                <br>
+                <input type="checkbox" name="improved " value="graphics_designing" id="improve">Graphics designing intership</checkbox>
+                <br>
+                <input type="checkbox" name="improved " value="java" id="improve">Java intership</checkbox>
+                <br>
+                <input type="checkbox" name="improved " value="python" id="improve">Python intership</checkbox>
+                <br>
+                <input type="checkbox" name="improved " value="web_dev" id="improve">Web development intership</checkbox>
+                <br>
+
+                <h4>
+                    Do you have more comments ?
+                </h4>
+                <input type="text" name="comment" id="comment">
+                <br>  
+                <div class="g-recaptcha" data-sitekey="6LcWH9gnAAAAAO9DrLEGsT56mkksZLP9U8nF4Gtq"></div>
+                
+                <button action='submit'>Submit Feedback</button>
+                    
+            </form>
+            
+
+    </div>
+
+    
+        
+ </script>
+    </script>
+</body>
+
+</html>
